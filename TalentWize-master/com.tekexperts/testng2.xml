@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+
+	<test name="Test 1">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_TrainingPermission_Courses" />
+		</classes>
+	</test>
+	
+	<test name="Test 2">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_ED_Assets" />
+		</classes>
+	</test>
+
+	<test name="Test 3">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_PerformancePermission_KPI_MyKPI" />
+		</classes>
+	</test>
+
+	<test name="Test 4">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TrainingPermission_Programs" />
+		</classes>
+	</test>
+
+	<test name="Test 6">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalC_Access_TalentPermission_SuccessionPlanning_SuccessionPlanningBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 7">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_MyED_MyTasks" />
+		</classes>
+	</test>
+
+	<test name="Test 8">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyPersonalDetails_EmergencyContact" />
+		</classes>
+	</test>
+
+
+	<test name="Test 9">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyDocument" />
+		</classes>
+	</test>
+
+	<test name="Test 10">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ReportPermission_TrainingReport" />
+		</classes>
+	</test>
+
+	
+
+	<test name="Test 11">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ReportPermission_TimesheetReport" />
+		</classes>
+	</test>
+
+	<test name="Test 12">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TrainingPermission_MyTraining_MyPersonalTrainingCourses" />
+		</classes>
+	</test>
+
+	<test name="Test 13">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_EmploymentListPermission" />
+		</classes>
+	</test>
+
+	<test name="Test 14">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_Appraisal_Management_List" />
+		</classes>
+	</test>
+
+	<test name="Test 15">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_My_MyPersonalDetails_Address" />
+		</classes>
+	</test>
+
+	<test name="Test 16">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_ED_Document" />
+		</classes>
+	</test>
+
+	<test name="Test 17">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyQualification" />
+		</classes>
+	</test>
+
+	<test name="Test 18">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_PilotView_PersonalDetails_Address" />
+		</classes>
+	</test>
+
+	<test name="Test 19">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ED_WorkMobility" />
+		</classes>
+	</test>
+
+	<test name="Test 20">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_EmployeeList" />
+		</classes>
+	</test>
+
+
+	<test name="Test 21">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_PilotView_PersonalDetails_ContactInformation" />
+		</classes>
+	</test>
+
+	<test name="Test 22">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_KPIBoardByUnit" />
+		</classes>
+	</test>
+
+	<test name="Test 23">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_HeadCount" />
+		</classes>
+	</test>
+
+
+	<test name="Test 24">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MasterScheduling_SchedulingBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 25">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MasterScheduling_SchedulingBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 26">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Organization_Units" />
+		</classes>
+	</test>
+
+	<test name="Test 27">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_PerformancePermission_Goals_MyGoal" />
+		</classes>
+	</test>
+
+	<!-- <test name="Test 28">
+		<classes>
+			<class name="talentwize.H_Test_UsersManagement_Roles" />
+		</classes>
+	</test> -->
+
+	<test name="Test 29">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAcess_Administration_Configuration_AzureLDAP" />
+		</classes>
+	</test>
+
+	<test name="Test 30">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_TalentPermission_Competency_CompetencyBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 31">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Leave_Management" />
+		</classes>
+	</test>
+
+	<test name="Test 32">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_PilotView_PersonalDetails_EmergencyContact" />
+		</classes>
+	</test>
+
+
+	<test name="Test 33">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MasterScheduling_RecommendCoverage" />
+		</classes>
+	</test>
+
+	<test name="Test 34">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ProjectManagementPermission_ProjectDetail_ProjectMemberList" />
+		</classes>
+	</test>
+
+	<test name="Test 35">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ProjectManagementPermission_ProjectDetail_ImportMembertoProject" />
+		</classes>
+	</test>
+
+	<test name="Test 36">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TrainingPermission_TrainingManagement" />
+		</classes>
+	</test>
+
+	<test name="Test 37">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_MyED_MyAssets" />
+		</classes>
+	</test>
+
+	<test name="Test 38">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcessAdministration_Configuration_Broadcast" />
+		</classes>
+	</test>
+
+	<test name="Test 39">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Configuration_CustomFields" />
+		</classes>
+	</test>
+
+	<test name="Test 40">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_Performance_GoalBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 41">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_CheckIn_Board" />
+		</classes>
+	</test>
+
+	<test name="Test 42">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyProjects" />
+		</classes>
+	</test>
+
+	<test name="Test 43">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_PilotView_CompanyDetails_ReportTo" />
+		</classes>
+	</test>
+
+	<test name="Test 44">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ImportMembertoProject" />
+		</classes>
+	</test>
+
+	<test name="Test 45">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_TalentPermission_MySuccession" />
+		</classes>
+	</test>
+
+	<test name="Test 46">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Configuration_PowerBI" />
+		</classes>
+	</test>
+
+	<test name="Test 47">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_ED_Projects" />
+		</classes>
+	</test>
+
+	<test name="Test 48">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ReportPermission_ProjectReport" />
+		</classes>
+	</test>
+
+	<test name="Test 49">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAcessAdministration_Organization_JobTitle" />
+		</classes>
+	</test>
+
+	<test name="Test 50">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_PerformancePermission_Checkin_MyCheckin" />
+		</classes>
+	</test>
+
+	<test name="Test 51">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_Timesheet_Task_Import" />
+		</classes>
+	</test>
+
+	<test name="Test 52">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_PilotView_CompanyDetails_ClientEmployeeData" />
+		</classes>
+	</test>
+
+	<test name="Test 53">
+		<classes>
+			<class
+				name="talentwize.C_Test_TalentPermission_CareerDevelopment_MyCareerDevelopment" />
+		</classes>
+	</test>
+
+	<test name="Test 54">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_TalentPermission_MySuccessor" />
+		</classes>
+	</test>
+
+	<test name="Test 55">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyCompanyDetails_ReportTo" />
+		</classes>
+	</test>
+
+	<test name="Test 56">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ProjectBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 57">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_Performance_CheckinSettings" />
+		</classes>
+	</test>
+	<test name="Test 58">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ReportPermission_CapacityReport" />
+		</classes>
+	</test>
+
+	<test name="Test 59">
+		<classes>
+			<class name="talentwize.C_Test_FunctionalAccess_MyED_MySkill" />
+		</classes>
+	</test>
+
+	<test name="Test 60">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_TargetVolume" />
+		</classes>
+	</test>
+
+	<test name="Test 61">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_Appraisal_Management_Cycle" />
+		</classes>
+	</test>
+
+	<test name="Test 62">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcessAdministration_Configuration_SelectInputs" />
+		</classes>
+	</test>
+
+	<test name="Test 63">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyCompanyDetails_GeneralInformation" />
+		</classes>
+	</test>
+
+	<test name="Test 64">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyEmployment" />
+		</classes>
+	</test>
+	<test name="Test 65">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ReportPermission_AssetReport" />
+		</classes>
+	</test>
+
+	<test name="Test 66">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Configuration_CodeIdentity_Settings" />
+		</classes>
+	</test>
+
+	<test name="Test 67">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ReportPermission_LeaveReport" />
+		</classes>
+	</test>
+
+	<test name="Test 68">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Leave_MyRequestList" />
+		</classes>
+	</test>
+
+	<test name="Test 69">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_Personal_PerformanceManagementImport" />
+		</classes>
+	</test>
+
+	<test name="Test 70">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Leave_Configuration" />
+		</classes>
+	</test>
+
+	<test name="Test 71">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ReportPermission_EmployeeReport" />
+		</classes>
+	</test>
+
+	<test name="Test 72">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Timesheet_MyTimesheet" />
+		</classes>
+	</test>
+	<test name="Test 73">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcessAdministration_Configuration_DomainSettings" />
+		</classes>
+	</test>
+
+	<test name="Test 74">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ProjectDetail_ProjectCapacity" />
+		</classes>
+	</test>
+
+	<test name="Test 75">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_ED_Tasks" />
+		</classes>
+	</test>
+
+	<test name="Test 76">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyCompanyDetails_ClientEmployeeData" />
+		</classes>
+	</test>
+	<test name="Test 77">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Organization_Sites" />
+		</classes>
+	</test>
+
+	<test name="Test 78">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_PerformancePermission_Appraisal_MyAppraisal" />
+		</classes>
+	</test>
+
+	<test name="Test 79">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Leave_MyBalanceList" />
+		</classes>
+	</test>
+
+	<test name="Test 80">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_PerformancePermission_MyKPIByProject" />
+		</classes>
+	</test>
+
+	<test name="Test 81">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ProjectManagementPermission_ProjectDetail_ProjectSettings" />
+		</classes>
+	</test>
+	<test name="Test 82">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MasterScheduling_MySchedule" />
+		</classes>
+	</test>
+	<test name="Test 83">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_MyED_MyWorkMobility" />
+		</classes>
+	</test>
+	<test name="Test 84">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_KPISettings" />
+		</classes>
+	</test>
+	<test name="Test 85">
+		<classes>
+			<class
+				name="talentwize.C_Test_TimesheetPermission_Timesheet_Management" />
+		</classes>
+	</test>
+	<test name="Test 86">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TrainingPermission_MyAssignedTraining" />
+		</classes>
+	</test>
+
+	<test name="Test 87">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TalentPermission_CompetencySettings_Certificate_SkillConfiguration" />
+		</classes>
+	</test>
+
+	<test name="Test 88">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_AuditLog" />
+		</classes>
+	</test>
+
+	<test name="Test 89">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyCompanyJobHistory" />
+		</classes>
+	</test>
+
+	<test name="Test 90">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ED_Qualification" />
+		</classes>
+	</test>
+
+	<test name="Test 91">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_KPIBoardByProject" />
+		</classes>
+	</test>
+
+	<test name="Test 92">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ProjectDetail_ProjectInfo" />
+		</classes>
+	</test>
+
+	<test name="Test 93">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcessAdministration_Configuration_Notifications" />
+		</classes>
+	</test>
+
+	<test name="Test 94">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAcess_Administration_Configuration_DefaultSettings" />
+		</classes>
+	</test>
+
+	<test name="Test 95">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ReportPermission_TalentReport" />
+		</classes>
+	</test>
+
+	<test name="Test 96">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_TrainingPermission_TrainingSettings" />
+		</classes>
+	</test>
+
+	<test name="Test 97">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TalentPermission_Competency_Settings_CompetencyConfigurationMapping" />
+		</classes>
+	</test>
+
+	<test name="Test 98">
+		<classes>
+
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Configuration_Mentors" />
+		</classes>
+	</test>
+
+	<test name="Test 99">
+		<classes>
+
+
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_Configuration_Charts" />
+		</classes>
+	</test>
+
+	<test name="Test 100">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAcess_Leave_Calendar" />
+		</classes>
+	</test>
+
+	<test name="Test 101">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_My_MyPersonalDetails_GeneralInformation" />
+		</classes>
+	</test>
+
+	<test name="Test 102">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_PilotView_PersonalDetails_Dependents" />
+		</classes>
+	</test>
+
+	<test name="Test 103">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ProjectPermission" />
+		</classes>
+	</test>
+
+	<test name="Test 104">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TalentPermission_CompetencySettings_CompetencyReviewSchedule" />
+		</classes>
+	</test>
+
+	<test name="Test 105">
+		<classes>
+			<class name="talentwize.H_Test_FunctionalAccess_ED_Employment" />
+		</classes>
+	</test>
+
+	<test name="Test 106">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_PilotView_PersonalDetails_GeneralInformation" />
+		</classes>
+	</test>
+
+	<test name="Test 107">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalH_Access_TalentPermission_CareerDevelopment_CareerDevelopmentBoard" />
+		</classes>
+	</test>
+
+	<test name="Test 108">
+		<classes>
+
+			<class
+				name="talentwize.C_Test_FunctionalAccess_ProjectManagementPermission_QuotaManagement" />
+		</classes>
+	</test>
+
+	<test name="Test 109">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Leave_ImportBalance" />
+		</classes>
+	</test>
+
+	<test name="Test 110">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ActualVolume" />
+		</classes>
+	</test>
+
+	<test name="Test 111">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_ED_CompanyJobHistory" />
+		</classes>
+	</test>
+
+	<test name="Test 112">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TimesheetPermission_Timesheet_Configuration" />
+		</classes>
+	</test>
+
+
+	<test name="Test 113">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_GoalManagement" />
+		</classes>
+	</test>
+
+	<test name="Test 114">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_My_MyPersonalDetails_ContactInformation" />
+		</classes>
+	</test>
+
+	<test name="Test 115">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_MyED_MyPersonalDetails_Dependents" />
+		</classes>
+	</test>
+	
+	<test name="Test 116">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_Performance_KPISettingsByProject" />
+		</classes>
+	</test>
+	<test name="Test 117">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAccess_Administration_Organization_JobTitle" />
+		</classes>
+	</test>
+
+	<test name="Test 118">
+		<classes>
+			<class
+				name="talentwize.H_Test_FunctionalAcess_Administration_UserManagement_Users_Roles" />
+		</classes>
+	</test> 
+	<test name="Test 119">
+		<classes>
+			<class
+				name="talentwize.C_Test_FunctionalAccess_TalentPermission_Competency_MyCompetencies" />
+		</classes>
+	</test>
+	
+	<!-- Test -->
+</suite> <!-- Suite -->
