@@ -76,6 +76,19 @@ public class PropertyManager {
 	public static String START_DATE="01-Jul-2019"; 
 	public static String END_DATE="31-Sep-2019";
 	
+	//========================
+	public static String URL_CHATBOT = "https://ams-api-tekbot-test.azurewebsites.net/bot";
 	
+	// Full Name : I am Admin
+	public static String BOTADMIN = "test2.staff@tek-experts.com";
+	public static String BOTPASSWORD_ADMIN = "T2S@2019";
+	
+	public  String getEmailBotAdmin() {
+		return BOTADMIN;
+	}
 
+	public  String getPasswordBotAdmin() {
+		return BOTPASSWORD_ADMIN;
+
+	}
 }
