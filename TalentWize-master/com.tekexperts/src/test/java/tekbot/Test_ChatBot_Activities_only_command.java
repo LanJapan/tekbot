@@ -41,6 +41,7 @@ public class Test_ChatBot_Activities_only_command extends TestManager {
 		TestLogger.info("Click on I'min (#imin) button");
 		homePage.clickButtonImin();
 		TestLogger.info("Scroll to bottom page");
+		homePage.scrollToBottomPage();
 		
 	}
 
