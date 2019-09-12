@@ -91,4 +91,16 @@ public class PropertyManager {
 		return BOTPASSWORD_ADMIN;
 
 	}
+	// Full Name : I am Admin
+	public static String BOTTest1 = "test1.staff@tek-experts.com";
+	public static String BOTPASSWORD_Test1= "T1S@2019";
+	
+	public  String getEmailBotTest1() {
+		return BOTTest1;
+	}
+
+	public  String getPasswordBotTest1() {
+		return BOTPASSWORD_Test1;
+
+	}
 }
