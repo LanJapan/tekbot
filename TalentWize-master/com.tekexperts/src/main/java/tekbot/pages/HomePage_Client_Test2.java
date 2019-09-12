@@ -107,6 +107,16 @@ public class HomePage_Client_Test2 extends WebActions {
 	By lblFinishYourActivityFirst_Nesting=By.xpath("//p[contains(.,'Finish your activity first')]");
 	By txtFinishYourActivityFirst_Nesting=By.xpath("//p[contains(.,'Close your previous action before doing anything else.\n" + "In case you cannot check the chat history it was: #nesting')]");
 	By btnFinishLunch_activityfirst_Nesting=By.xpath("//button[contains(.,'Finish Nesting (#nesting)')]");
+	//=============================Training==========================
+	By txtCommand_Training=By.xpath("//p[contains(.,'#training')]");
+	By lblTraining=By.xpath("//p[contains(.,'Training')]");
+	By txtTraining=By.xpath("//p[contains(.,'Go learn young Padawan.')]");
+	By btnFinishTraining=By.xpath("//button[contains(.,'Finish Training (#training)')]");
+	By txtFinishTraining=By.xpath("//p[contains(.,'The future Jedi is back. Mace Test 2 Staff has a ring to it.')]");
+	//==========================Finish your activity first Nesting ========
+	By lblFinishYourActivityFirst_Training=By.xpath("//p[contains(.,'Finish your activity first')]");
+	By txtFinishYourActivityFirst_Training=By.xpath("//p[contains(.,'Close your previous action before doing anything else.\n" + "In case you cannot check the chat history it was: #training')]");
+	By btnFinishYourActivityfirst_Training=By.xpath("//button[contains(.,'Finish Training (#training)')]");
 	
 	public HomePage_Client_Test2(WebDriver driver) {
 		super(driver);
@@ -1355,5 +1365,108 @@ public class HomePage_Client_Test2 extends WebActions {
 						e.printStackTrace();
 					}
 					clickByJavaScript(btnFinishLunch_activityfirst_Nesting);
+				}				
+				//=================Training================
+				public boolean isLblTrainingDisplayed() {
+					boolean flag = false;
+					try {
+						if (driver.findElements(lblTraining).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				public boolean isTxtTrainingDisplayed() {
+					boolean flag = false;
+					try {
+						waitForElementPresent(10, txtTraining);
+					} catch (InterruptedException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					try {
+						if (driver.findElements(txtTraining).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				public boolean isBtnFinishTrainingDisplayed() {
+					boolean flag = false;
+					try {
+						if (driver.findElements(btnFinishTraining).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				public void clickButtonFinishTraining() {
+					try {
+						waitForElementPresent(5, btnFinishTraining);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					clickByJavaScript(btnFinishTraining);
+				}
+				public boolean isTxtFinishTrainingDisplayed() {
+					boolean flag = false;
+					try {
+						if (driver.findElements(txtFinishTraining).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				//=================Project: Finish your activity first================
+				public boolean isLblFinishYourActivityFirst_TrainingDisplayed() {
+					boolean flag = false;
+					try {
+						if (driver.findElements(lblFinishYourActivityFirst).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				public boolean isTxtFinishYourActivityFirst_TrainingDisplayed() {
+					boolean flag = false;
+					try {
+						if (driver.findElements(txtFinishYourActivityFirst_Training).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				public boolean isBtnFinishTrainingActivityFirstDisplayed() {
+					boolean flag = false;
+					try {
+						if (driver.findElements(btnFinishYourActivityfirst_Training).size() > 0) {
+							flag = true;
+						}
+					} catch (Exception e) {
+						return flag;
+					}
+					return flag;
+				}
+				public void clickButtonFinishTrainingActivityFirst() {
+					try {
+						waitForElementPresent(5, btnFinishYourActivityfirst_Training);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					clickByJavaScript(btnFinishYourActivityfirst_Training);
 				}				
 }

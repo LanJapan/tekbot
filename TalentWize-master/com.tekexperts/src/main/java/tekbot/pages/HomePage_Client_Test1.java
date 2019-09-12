@@ -154,7 +154,7 @@ public class HomePage_Client_Test1 extends WebActions {
 	}
 	public void clickButtonImin() {
 		try {
-			waitForElementPresent(8, btnImin);
+			waitForElementPresent(15, btnImin);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
