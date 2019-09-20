@@ -91,7 +91,7 @@ public class Test_ChatBot_Activities_Button extends TestManager {
 	}
 	@Test(priority = 3)
 	public void TT_6174() throws InterruptedException {
-		//homePage.waitForPageLoaded();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Submit button");
 		homePage.clickButtonSubmit();
 		if (homePage.isNiceMeetingYouDisplayed() == true) {
@@ -117,7 +117,7 @@ public class Test_ChatBot_Activities_Button extends TestManager {
 	}
 	@Test(priority = 4)
 	public void TT_6631() throws InterruptedException {
-		//homePage.waitForPageLoaded();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on I'min (#imin) button");
 		homePage.clickButtonImin();
 		TestLogger.info("Scroll to bottom page");
