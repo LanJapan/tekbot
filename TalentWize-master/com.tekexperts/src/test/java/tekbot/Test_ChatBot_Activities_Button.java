@@ -13,11 +13,11 @@ import Ulties.PropertyManager;
 import Ulties.TestLogger;
 import Ulties.TestManager;
 import controller.WebDriversManager;
-import tekbot.pages.HomePage_Client_Test1;
+import tekbot.pages.HomePage_Client_Test;
 
-public class Test_ChatBot_Activities_Test1 extends TestManager {
+public class Test_ChatBot_Activities_Button extends TestManager {
 
-	HomePage_Client_Test1 homePage;
+	HomePage_Client_Test homePage;
 	WebDriver driver;
 	PropertyManager propertyManager;
 
@@ -28,7 +28,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 		propertyManager.loadData();
 
 		driver = WebDriversManager.moTrinhDuyet("chrome");
-		homePage = new HomePage_Client_Test1(driver);
+		homePage = new HomePage_Client_Test(driver);
 
 	}
 
@@ -45,7 +45,6 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Welcome to TekBot is NOT displayed");
 		}
-
 		if (homePage.isIconChatBotDisplayed() == true) {
 			setStatusTest("PASS", "Icon TekBot is displayed");
 		} else {
@@ -270,9 +269,9 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			TestLogger.info("Click on Finish Lunch button");
 			homePage.clickButtonFinishLunchActivityFirst();
 			if (homePage.isTxtFinishLunchDisplayed()== true) {
-				setStatusTest("PASS", "Don’t go sleepy on me now Test 1 Staff ;) is displayed");
+				setStatusTest("PASS", "Don’t go sleepy on me now Test 2 Staff ;) is displayed");
 			} else {
-				setStatusTest("FAIL", "Don’t go sleepy on me now Test 1 Staff ;) is NOT displayed");
+				setStatusTest("FAIL", "Don’t go sleepy on me now Test 2 Staff ;) is NOT displayed");
 			}
 	}
 		@Test(priority = 8)
@@ -551,9 +550,9 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			TestLogger.info("Click on Finish Project  button");
 			homePage.clickButtonFinishProjectActivityFirst();
 			if (homePage.isTxtFinishProjectDisplayed()== true) {
-				setStatusTest("PASS", "Welcome back Test 1 Staff. is displayed");
+				setStatusTest("PASS", "Welcome back Test 2 Staff. is displayed");
 			} else {
-				setStatusTest("FAIL", "Welcome back Test 1 Staff. is NOT displayed");
+				setStatusTest("FAIL", "Welcome back Test 2 Staff. is NOT displayed");
 			}
 	}
 		@Test(priority = 13)
@@ -608,9 +607,9 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			TestLogger.info("Click on Finish Nesting  button");
 			homePage.clickButtonFinishNestingActivityFirst();
 			if (homePage.isTxtFinishNestingDisplayed()== true) {
-				setStatusTest("PASS", "Welcome back Test 1 Staff. is displayed");
+				setStatusTest("PASS", "Welcome back Test 2 Staff. is displayed");
 			} else {
-				setStatusTest("FAIL", "Welcome back Test 1 Staff. is NOT displayed");
+				setStatusTest("FAIL", "Welcome back Test 2 Staff. is NOT displayed");
 			}
 	}
 	@AfterMethod(alwaysRun = true)
