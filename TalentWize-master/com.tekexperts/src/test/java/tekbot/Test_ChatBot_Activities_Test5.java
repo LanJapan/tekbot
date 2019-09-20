@@ -13,7 +13,6 @@ import Ulties.PropertyManager;
 import Ulties.TestLogger;
 import Ulties.TestManager;
 import controller.WebDriversManager;
-import tekbot.pages.HomePage_Client_Test4;
 import tekbot.pages.HomePage_Client_Test5;
 
 public class Test_ChatBot_Activities_Test5 extends TestManager {
