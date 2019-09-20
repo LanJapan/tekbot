@@ -37,7 +37,7 @@ import Ulties.TienIch;
 
 public class WebActions {
 
-	public static WebDriver driver;
+	public  WebDriver driver;
 
 	
 	public WebActions(WebDriver _driver)
@@ -602,7 +602,7 @@ public class WebActions {
 	 * @return void
 	 */
 
-	public static void phongToCuaSoTrinhDuyet() {
+	public  void phongToCuaSoTrinhDuyet() {
 		driver.manage().window().maximize();
 	}
 
@@ -810,7 +810,7 @@ public class WebActions {
 	 * 
 	 */
 
-	public static WebElement getElementByLocator(By locator) {
+	public WebElement getElementByLocator(By locator) {
 		TestLogger.info("Get element by locator: " + locator.toString());
 		long startTime = System.currentTimeMillis();
 		driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);

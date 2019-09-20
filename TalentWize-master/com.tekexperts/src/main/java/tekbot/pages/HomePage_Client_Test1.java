@@ -57,7 +57,7 @@ public class HomePage_Client_Test1 extends WebActions {
 	By txtCommand_break=By.xpath("//p[contains(.,'#break')]");
 	By lblFinishYourActivityFirst=By.xpath("//div[@class='ac-textBlock'][contains(.,'Finish your activity first')]");
 	By txtFinishYourActivityFirst=By.xpath("//p[contains(.,'Close your previous action before doing anything else.\n" + "In case you cannot check the chat history it was: #lunch')]");
-	By btnFinishLunch_activityfirst=By.xpath("(//button[contains(.,'Finish Lunch (#lunch)')])[2]");
+	By btnFinishLunch_activityfirst=By.xpath("//button[contains(.,'Finish Lunch (#lunch)')]");
 	//=============================Break==========================
 	By lblBreak=By.xpath("//div[@class='ac-textBlock'][contains(.,'Break')]");
 	By txtBreak=By.xpath("//div[@class='ac-textBlock'][contains(.,'Enjoy! See you in a bit Test 1 Staff.')]");
@@ -390,12 +390,12 @@ public class HomePage_Client_Test1 extends WebActions {
 	}
 	public void clickButtonYes() {
 		try {
-			waitForElementPresent(5, btnYes);
+			waitForElementPresent(25, btnYes);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(btnYes).click();
+		clickByJavaScript(btnYes);
 	}
 	public boolean isLblClockingInDisplayed() {
 		boolean flag = false;

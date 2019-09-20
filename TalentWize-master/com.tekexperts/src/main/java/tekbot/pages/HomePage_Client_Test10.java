@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import Ulties.PropertyManager;
 import controller.WebActions;
 
-public class HomePage_Client_Test2 extends WebActions {
+public class HomePage_Client_Test10 extends WebActions {
 
 	By btnSignin = By.xpath("//button[contains(@aria-label,'Sign In')]");
 	By txtFillMessage = By.xpath("//input[@aria-label='Type your message']");
@@ -20,16 +20,16 @@ public class HomePage_Client_Test2 extends WebActions {
 	By txtCallNickName=By.xpath("//p[contains(.,'How would you like me to call you?')]");
 	By txtNickName = By.xpath("//input[@placeholder='Enter your nickname']");
 	By btnSubmit = By.xpath("//button[contains(.,'Submit')]");
-	By txtNiceMeetingYou = By.xpath("//p[contains(.,'Nice meeting you Test 2 Staff.')]");
+	By txtNiceMeetingYou = By.xpath("//p[contains(.,'Nice meeting you UAT 1 Azure Manager.')]");
 	By txtEmail=By.xpath("//input[contains(@type,'email')]");
 	By btnNext=By.xpath("//input[contains(@value,'Next')]");
 	By txtPassword=By.xpath("//input[@placeholder='Password']");
 	By btnSigninAD=By.xpath("//input[contains(@value,'Sign in')]");
 	By btnYes=By.xpath("//input[contains(@value,'Yes')]");
 	By lblClockingin=By.xpath("//p[contains(.,'Clocking in')]");
-	By txtGoodMorning=By.xpath("//p[contains(.,'Good morning Test 2 Staff. Let’s start your day!')]");
+	By txtGoodMorning=By.xpath("//p[contains(.,'Good morning UAT 1 Azure Manager. Let’s start your day!')]");
 	By btnImin=By.xpath("(//button[contains(@type,'button')])[3]");
-	By txtHello=By.xpath("//p[contains(.,'Hello Test 2 Staff!')]");
+	By txtHello=By.xpath("//p[contains(.,'Hello UAT 1 Azure Manager!')]");
 	By lblHelp=By.xpath("//p[contains(.,'Help')]");
 	By txtHelp=By.xpath("//p[contains(.,'Here are the list of all possible commands’ categories. You can click on each category to discover the commands:')]");
 	By btnActivity=By.xpath("//button[contains(.,'Activity (#activity)')]");
@@ -118,7 +118,7 @@ public class HomePage_Client_Test2 extends WebActions {
 	By txtFinishYourActivityFirst_Training=By.xpath("//p[contains(.,'Close your previous action before doing anything else.\n" + "In case you cannot check the chat history it was: #training')]");
 	By btnFinishYourActivityfirst_Training=By.xpath("//button[contains(.,'Finish Training (#training)')]");
 	
-	public HomePage_Client_Test2(WebDriver driver) {
+	public HomePage_Client_Test10(WebDriver driver) {
 		super(driver);
 		moLinkWeb(PropertyManager.URL_CHATBOT);
 		phongToCuaSoTrinhDuyet();
@@ -310,7 +310,7 @@ public class HomePage_Client_Test2 extends WebActions {
 		}
 		return flag;
 	}
-	public String openNewTabAndGetCode(WebDriver driver)
+	public String openNewTabAndGetCode(WebDriver driver, String email, String password)
 	{
 		   WebElement code = null ;
 		   String valueCode="";
@@ -326,7 +326,7 @@ public class HomePage_Client_Test2 extends WebActions {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-	                typeEmail(PropertyManager.BOTADMIN);
+	                typeEmail(email);
 	               // clickButtonNext();
 	                try {
 						waitForElementPresent(10, txtPassword);
@@ -334,7 +334,7 @@ public class HomePage_Client_Test2 extends WebActions {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-	                typePassword(PropertyManager.BOTPASSWORD_ADMIN);
+	                typePassword(password);
 	                try {
 						waitForElementPresent(10, btnYes);
 					} catch (InterruptedException e1) {
@@ -408,6 +408,7 @@ public class HomePage_Client_Test2 extends WebActions {
 		}
 		clickByJavaScript(btnYes);
 	}
+	
 	public boolean isLblClockingInDisplayed() {
 		boolean flag = false;
 		try {

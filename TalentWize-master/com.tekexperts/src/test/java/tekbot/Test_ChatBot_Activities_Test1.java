@@ -19,6 +19,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 
 	HomePage_Client_Test1 homePage;
 	WebDriver driver;
+	
 	PropertyManager propertyManager;
 
 	@BeforeTest
@@ -26,8 +27,8 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 
 		propertyManager = new PropertyManager();
 		propertyManager.loadData();
-
-		driver = WebDriversManager.moTrinhDuyet("chrome");
+		WebDriversManager manager = new WebDriversManager();
+		driver = manager.moTrinhDuyetMoi("chrome");
 		homePage = new HomePage_Client_Test1(driver);
 
 	}
@@ -129,7 +130,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			setStatusTest("FAIL", "hello nick name is NOT displayed");
 		}
 	}
-	@Test(priority = 5)
+	//@Test(priority = 5)
 	public void TT_6586() throws InterruptedException {
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
@@ -159,7 +160,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			setStatusTest("FAIL", "Guide button  is NOT displayed");
 		}
 	}
-		@Test(priority = 6)
+		//@Test(priority = 6)
 		public void TT_6580() throws InterruptedException {
 			homePage.waitForPageLoaded();
 			TestLogger.info("Click Activity (#activity) button");
@@ -221,7 +222,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			}
 	}
 		
-		@Test(priority = 7)
+	//	@Test(priority = 7)
 		public void TT_6846() throws InterruptedException {
 			TestLogger.info("Click Lunch (#lunch) button");
 			homePage.clickButtonLunch();
@@ -275,7 +276,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 				setStatusTest("FAIL", "Don’t go sleepy on me now Test 1 Staff ;) is NOT displayed");
 			}
 	}
-		@Test(priority = 8)
+		//@Test(priority = 8)
 		public void TT_6847() throws InterruptedException {
 			TestLogger.info("Scroll to Break button");
 			homePage.scrolltoActivityCategory();
@@ -330,7 +331,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			}
 	}
 	
-		@Test(priority = 9)
+		//@Test(priority = 9)
 		public void TT_6848() throws InterruptedException {
 			TestLogger.info("Scroll to Break button");
 			homePage.scrolltoActivityCategory();
@@ -386,7 +387,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 			}
 	}
 	
-		@Test(priority = 10)
+		//@Test(priority = 10)
 		public void TT_6849() throws InterruptedException {
 			homePage.waitForPageLoaded();
 			TestLogger.info("User type random thing to the bot.");
@@ -442,7 +443,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 				setStatusTest("FAIL", "Hope the meeting wasn’t boring. is NOT displayed");
 			}
 	}
-		@Test(priority = 11)
+	//	@Test(priority = 11)
 		public void TT_6850() throws InterruptedException {
 			homePage.waitForPageLoaded();
 			TestLogger.info("User type random thing to the bot.");
@@ -499,7 +500,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 				setStatusTest("FAIL", "Pretty sure it went well. is NOT displayed");
 			}
 	}
-		@Test(priority = 12)
+	//	@Test(priority = 12)
 		public void TT_6851() throws InterruptedException {
 			homePage.waitForPageLoaded();
 			TestLogger.info("User type random thing to the bot.");
@@ -556,7 +557,7 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 				setStatusTest("FAIL", "Welcome back Test 1 Staff. is NOT displayed");
 			}
 	}
-		@Test(priority = 13)
+		//@Test(priority = 13)
 		public void TT_6852() throws InterruptedException {
 			homePage.waitForPageLoaded();
 			TestLogger.info("User type random thing to the bot.");
@@ -622,6 +623,6 @@ public class Test_ChatBot_Activities_Test1 extends TestManager {
 
 	@AfterTest(alwaysRun = true)
 	public void dongTrinhDuyet() {
-		driver.close();
+		//driver.close();
 	}
 }

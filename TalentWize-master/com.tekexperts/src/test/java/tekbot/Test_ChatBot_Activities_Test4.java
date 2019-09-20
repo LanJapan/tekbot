@@ -13,11 +13,11 @@ import Ulties.PropertyManager;
 import Ulties.TestLogger;
 import Ulties.TestManager;
 import controller.WebDriversManager;
-import tekbot.pages.HomePage_Client_Test2;
+import tekbot.pages.HomePage_Client_Test4;
 
-public class Test_ChatBot_Activities_Test2 extends TestManager {
+public class Test_ChatBot_Activities_Test4 extends TestManager {
 
-	HomePage_Client_Test2 homePage;
+	HomePage_Client_Test4 homePage;
 	WebDriver driver;
 	PropertyManager propertyManager;
 
@@ -28,7 +28,7 @@ public class Test_ChatBot_Activities_Test2 extends TestManager {
 		propertyManager.loadData();
 		WebDriversManager manager = new WebDriversManager();
 		driver = manager.moTrinhDuyetMoi("chrome");
-		homePage = new HomePage_Client_Test2(driver);
+		homePage = new HomePage_Client_Test4(driver);
 
 	}
 
@@ -91,7 +91,7 @@ public class Test_ChatBot_Activities_Test2 extends TestManager {
 	}
 	@Test(priority = 3)
 	public void TT_6174() throws InterruptedException {
-		//homePage.waitForPageLoaded();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Submit button");
 		homePage.clickButtonSubmit();
 		if (homePage.isNiceMeetingYouDisplayed() == true) {
@@ -117,7 +117,7 @@ public class Test_ChatBot_Activities_Test2 extends TestManager {
 	}
 	@Test(priority = 4)
 	public void TT_6631() throws InterruptedException {
-		//homePage.waitForPageLoaded();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on I'min (#imin) button");
 		homePage.clickButtonImin();
 		TestLogger.info("Scroll to bottom page");

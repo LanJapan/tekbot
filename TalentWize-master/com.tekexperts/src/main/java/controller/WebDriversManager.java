@@ -30,12 +30,95 @@ public class WebDriversManager {
 	 * @param BROWSER_NAME chrome ff ie
 	 */
 	static WebDriver driver;
+	WebDriver driver2;
 	protected static boolean ieFlag;
 	protected static boolean chromeFlag;
 	protected String baseUrl;
 	protected Actions action;
 	
 	public static WebDriver moTrinhDuyet(String BROWSER_NAME) {
+
+		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
+
+		String chromedriver = TienIch.getResources("chromedriver.exe");
+		String IEdriver = TienIch.getResources("IEDriverServer.exe");
+		String FireFox = TienIch.getResources("geckodriver.exe");
+		String Edge = TienIch.getResources("MicrosoftWebDriver.exe");
+
+		if ("chrome".equals(BROWSER_NAME)) {
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("chrome.switches", "--disable-extensions");
+			System.setProperty("webdriver.chrome.driver", chromedriver);
+			driver = new ChromeDriver(options);
+			chromeFlag = true;
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().deleteAllCookies();
+			return driver;
+			
+			//========  RUN EDGE with VERSION <= Microsoft EdgeHTML 17 ========= 
+			/*System.setProperty("webdriver.edge.driver", Edge);
+			driver = new EdgeDriver();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			return driver;*/
+			
+			// ========  RUN EDGE with VERSION >= Microsoft EdgeHTML 18 ========= 
+	
+		/*	driver = new EdgeDriver();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			return driver;*/
+			
+		} 
+		
+		else if ("ie".equals(BROWSER_NAME)) {
+			System.setProperty("webdriver.ie.driver", IEdriver);
+			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+			capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+			driver = new InternetExplorerDriver(capabilities);
+			ieFlag = true;
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			return driver;
+
+		} else  {
+
+			// Save the path of the XPI files as per your saved location
+			// Pass the XPIs path to the profile
+			// profile.setPreference("plugins.hide_infobar_for_missing_plugin",true);
+			/*
+			 * profile.setPreference("browser.startup.homepage_override.mstone", "ignore");
+			 * profile.setPreference("startup.homepage_welcome_url.additional",
+			 * "about:blank"); profile.setPreference("dom.max_script_run_time", 0);
+			 * DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+			 * capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+			 */
+
+			/*
+			 * File pathToBinary = new
+			 * File("C:\\Users\\ha.nguyen-viet\\AppData\\Local\\Mozilla Firefox\\Firefox.exe"
+			 * ); FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary); FirefoxProfile
+			 * firefoxProfile = new FirefoxProfile(); driver = new FirefoxDriver
+			 * (ffBinary,firefoxProfile);
+			 */
+
+			/*	*/
+
+			System.setProperty("webdriver.gecko.driver", FireFox);
+
+			File pathToBinary = new File(
+					"C:\\\\Users\\\\ha.nguyen-viet\\\\AppData\\\\Local\\\\Mozilla Firefox\\\\Firefox.exe");
+			FirefoxOptions options = new FirefoxOptions();
+
+			FirefoxBinary fireFoxbinary = new FirefoxBinary(pathToBinary);
+			options.setBinary(fireFoxbinary);
+
+			driver = new FirefoxDriver(options);
+
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			return driver;
+		}
+
+	}
+	
+	public WebDriver moTrinhDuyetMoi(String BROWSER_NAME) {
 
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
 

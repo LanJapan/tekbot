@@ -77,7 +77,7 @@ public class PropertyManager {
 	public static String END_DATE="31-Sep-2019";
 	
 	//========================
-	public static String URL_CHATBOT = "https://ams-api-tekbot-test.azurewebsites.net/bot";
+	public static String URL_CHATBOT = "https://ams-api-tekbot-dev.azurewebsites.net/bot";
 	
 	// Full Name : I am Admin
 	public static String BOTADMIN = "test2.staff@tek-experts.com";
@@ -103,4 +103,52 @@ public class PropertyManager {
 		return BOTPASSWORD_Test1;
 
 	}
+	// Dev 1
+	public static String BOTDev1 = "dev1.staff@tek-experts.com";
+	public static String BOTPASSWORD_Dev1= "D1S@2019";
+	
+	public  String getEmailBotDev1() {
+		return BOTDev1;
+	}
+
+	public  String getPasswordBotDev1() {
+		return BOTPASSWORD_Dev1;
+
+	}
+	// Dev 2
+	public static String BOTDev2 = "dev2.staff@tek-experts.com";
+	public static String BOTPASSWORD_Dev2= "D2S@2019";
+	
+	public  String getEmailBotDev2() {
+		return BOTDev2;
+	}
+
+	public  String getPasswordBotDev2() {
+		return BOTPASSWORD_Dev2;
+
+	}
+	// UAT 1
+	public static String BOTUAT1 = "uat1.staff@tek-experts.com";
+	public static String BOTPASSWORD_UAT1= ")A53tW4U";
+	// UAT 2
+	public static String BOTUAT2 = "uat2.staff@tek-experts.com";
+	public static String BOTPASSWORD_UAT2= "U2S@2019";
+	
+	// DEV 1 Azure
+	public static String BOTDEVAD1 = "dev1.azure.manager@tek-experts.com";
+	public static String BOTPASSWORD_DEVAD1= "D1AM@sw2019";
+	
+	// DEV 2 Azure
+	public static String BOTDEVAD2 = "dev2.azure.manager@tek-experts.com";
+	public static String BOTPASSWORD_DEVAD2= "D2AM@sw2019";
+	
+	
+	// Test 1 Azure
+		public static String BOTTESTAD1 = "test1.azure.manager@tek-experts.com";
+		public static String BOTPASSWORD_TESTAD1= "T1AM@sw2019";
+		
+	// Test 2 Azure
+		public static String BOTTESTAD2 = "uat1.azure.manager@tek-experts.com";
+		public static String BOTPASSWORD_TESTAD2= "U1AM@sw2019";
+		
 }

@@ -13,22 +13,22 @@ import Ulties.PropertyManager;
 import Ulties.TestLogger;
 import Ulties.TestManager;
 import controller.WebDriversManager;
-import tekbot.pages.HomePage_Client_Test2;
+import tekbot.pages.HomePage_Client_Test6;
 
-public class Test_ChatBot_Activities_Test2 extends TestManager {
+public class Test_ChatBot_Activities_Test6 extends TestManager {
 
-	HomePage_Client_Test2 homePage;
+	HomePage_Client_Test6 homePage;
 	WebDriver driver;
 	PropertyManager propertyManager;
 
 	@BeforeTest
 	public void KhoiTaoCacNguonTaiNguyen() {
 
-		propertyManager = new PropertyManager();
+		propertyManager = new PropertyManager();	
 		propertyManager.loadData();
 		WebDriversManager manager = new WebDriversManager();
 		driver = manager.moTrinhDuyetMoi("chrome");
-		homePage = new HomePage_Client_Test2(driver);
+		homePage = new HomePage_Client_Test6(driver);
 
 	}
 
@@ -64,7 +64,7 @@ public class Test_ChatBot_Activities_Test2 extends TestManager {
 		homePage.typeMessage("hello");
 		TestLogger.info("Click on Sign in button");
 		homePage.clickButtonSignin();
-		String code=homePage.openNewTabAndGetCode(driver);
+		String code=homePage.openNewTabAndGetCode(driver, PropertyManager.BOTUAT2, PropertyManager.BOTPASSWORD_UAT2);
 		TestLogger.info("Paste code");
 		homePage.typeMessage(code);
 		homePage.waitForPageLoaded();
