@@ -150,5 +150,26 @@ public class PropertyManager {
 	// Test 2 Azure
 		public static String BOTTESTAD2 = "uat1.azure.manager@tek-experts.com";
 		public static String BOTPASSWORD_TESTAD2= "U1AM@sw2019";
-		
+		//======================================================================
+		// 11: UAT 2 Azure Manager
+		public static String BOTUAT2AD = "uat2.azure.manager@tek-experts.com";
+		public static String BOTPASSWORD_UAT2AD= "D8Q(=FU~qW";
+		// 12: Test 2 Azure Manager
+		public static String BOTTEST2AD = "test2.azure.manager@tek-experts.com";
+		public static String BOTPASSWORD_TEST2AD= "T2AM@sw2019";
+		// 13: Test 3 Staff
+		public static String BOTTEST3 = "test.3-staff@tek-experts.com";
+		public static String BOTPASSWORD_TEST3= "xw7YTNa5";
+		//14: Test  4 Staff
+		public static String BOTTEST4 = "test.4-staff@tek-experts.com";
+		//15: Test 5 Manager
+		public static String BOTTEST5 = "test.5-manager@tek-experts.com";
+		//16: Test 6 Manager
+		public static String BOTTEST6 = "test.6-manager@tek-experts.com";
+		//17: Dev 4 Staff
+		public static String BOTDEV4 = "dev.4-staff@tek-experts.com";
+		//18: Dev 5 Manager
+		public static String BOTDEV5 = "dev.5-manager@tek-experts.com";
+		//19: dev.3-staff@tek-experts.com
+		// 20: dev.6-manager@tek-experts.com
 }
