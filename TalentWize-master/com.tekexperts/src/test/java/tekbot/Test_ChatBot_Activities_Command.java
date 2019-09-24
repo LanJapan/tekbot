@@ -15,7 +15,7 @@ import Ulties.TestManager;
 import controller.WebDriversManager;
 import tekbot.pages.HomePage_Client_Test;
 
-public class Test_ChatBot_Activities_command extends TestManager {
+public class Test_ChatBot_Activities_Command extends TestManager {
 
 	HomePage_Client_Test homePage;
 	WebDriver driver;
