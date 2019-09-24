@@ -14,11 +14,11 @@ import Ulties.PropertyManager;
 import Ulties.TestLogger;
 import Ulties.TestManager;
 import controller.WebDriversManager;
-import tekbot.pages.HomePage_Client_Test10;
+import tekbot.pages.HomePage_Client_Test13;
 
 public class Test_ChatBot_Activities_Test13 extends TestManager {
 
-	HomePage_Client_Test10 homePage;
+	HomePage_Client_Test13 homePage;
 	WebDriver driver;
 	PropertyManager propertyManager;
 
@@ -29,7 +29,7 @@ public class Test_ChatBot_Activities_Test13 extends TestManager {
 		propertyManager.loadData();
 		WebDriversManager manager = new WebDriversManager();
 		driver = manager.moTrinhDuyetMoi("chrome");
-		homePage = new HomePage_Client_Test10(driver);
+		homePage = new HomePage_Client_Test13(driver);
 
 	}
 

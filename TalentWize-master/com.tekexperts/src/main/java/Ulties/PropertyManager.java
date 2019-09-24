@@ -153,10 +153,10 @@ public class PropertyManager {
 		//======================================================================
 		// 11: UAT 2 Azure Manager
 		public static String BOTUAT2AD = "uat2.azure.manager@tek-experts.com";
-		public static String BOTPASSWORD_UAT2AD= "D8Q(=FU~qW";
+		public static String BOTPASSWORD_UAT2AD= "U2AM@sw2019";
 		// 12: Test 2 Azure Manager
 		public static String BOTTEST2AD = "test2.azure.manager@tek-experts.com";
-		public static String BOTPASSWORD_TEST2AD= "T2AM@sw2019";
+		public static String BOTPASSWORD_TEST2AD= "N6yk9Gf8v";
 		// 13: Test 3 Staff
 		public static String BOTTEST3 = "test.3-staff@tek-experts.com";
 		public static String BOTPASSWORD_TEST3= "xw7YTNa5";
