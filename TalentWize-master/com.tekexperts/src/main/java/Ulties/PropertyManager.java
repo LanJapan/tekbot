@@ -77,7 +77,7 @@ public class PropertyManager {
 	public static String END_DATE="31-Sep-2019";
 	
 	//========================
-	public static String URL_CHATBOT = "https://ams-api-tekbot-dev.azurewebsites.net/bot";
+	public static String URL_CHATBOT = "https://ams-api-tekbot-test.azurewebsites.net/bot";
 	
 	// Full Name : I am Admin
 	public static String BOTADMIN = "test2.staff@tek-experts.com";
@@ -159,7 +159,7 @@ public class PropertyManager {
 		public static String BOTPASSWORD_TEST2AD= "N6yk9Gf8v";
 		// 13: Test 3 Staff
 		public static String BOTTEST3 = "test.3-staff@tek-experts.com";
-		public static String BOTPASSWORD_TEST3= "xw7YTNa5";
+		public static String BOTPASSWORD_TEST3= "HPdx83AK";
 		//14: Test  4 Staff
 		public static String BOTTEST4 = "test.4-staff@tek-experts.com";
 		//15: Test 5 Manager
@@ -170,6 +170,9 @@ public class PropertyManager {
 		public static String BOTDEV4 = "dev.4-staff@tek-experts.com";
 		//18: Dev 5 Manager
 		public static String BOTDEV5 = "dev.5-manager@tek-experts.com";
-		//19: dev.3-staff@tek-experts.com
-		// 20: dev.6-manager@tek-experts.com
-}
+		//19: Dev 6 Manager
+		public static String BOTDEV6 = "dev.6-manager@tek-experts.com";
+		// 20: Dev 3 Staff
+		public static String BOTDEV3 = "dev.3-staff@tek-experts.com";
+		
+}		

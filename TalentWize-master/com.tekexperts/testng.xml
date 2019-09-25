@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel Test Suite" parallel="classes" thread-count="10">
+<suite name="Parallel Test Suite" parallel="classes" thread-count="20">
 
 	<test name="Test 1">
 		<classes>
@@ -16,6 +16,14 @@
 			<class name="tekbot.Test_ChatBot_Activities_Test10" />
 			<class name="tekbot.Test_ChatBot_Activities_Test11" />
 			<class name="tekbot.Test_ChatBot_Activities_Test12" />
+			<class name="tekbot.Test_ChatBot_Activities_Test13" />
+			<class name="tekbot.Test_ChatBot_Activities_Test14" />
+			<class name="tekbot.Test_ChatBot_Activities_Test15" />
+			<class name="tekbot.Test_ChatBot_Activities_Test16" />
+			<class name="tekbot.Test_ChatBot_Activities_Test17" />
+			<class name="tekbot.Test_ChatBot_Activities_Test18" />
+			<class name="tekbot.Test_ChatBot_Activities_Test19" />
+			<class name="tekbot.Test_ChatBot_Activities_Test20" />
 		</classes>
 	</test>
 	
