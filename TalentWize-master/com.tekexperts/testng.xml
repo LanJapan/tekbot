@@ -2,159 +2,34 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
 
-	
-
-	<test name="Test 6">
+	<test name="Test 1">
 		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalC_Access_TalentPermission_SuccessionPlanning_SuccessionPlanningBoard" />
+			<class name="tekbot.Test_ChatBot_Activities" />
 		</classes>
 	</test>
 
-	<test name="Test 7">
+	<test name="Test 2">
 		<classes>
-			<class name="talentwize.H_Test_FunctionalAccess_MyED_MyTasks" />
+			<class name="tekbot.Test_ChatBot_Activities_Button" />
 		</classes>
 	</test>
 
-	<test name="Test 14">
+	<test name="Test 3">
 		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_Appraisal_Management_List" />
+			<class name="tekbot.Test_ChatBot_Activities_Command_Button" />
 		</classes>
 	</test>
 
-	<test name="Test 22">
+	<test name="Test 4">
 		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_KPIBoardByUnit" />
+			<class name="tekbot.Test_ChatBot_Activities_Command" />
+		</classes>
+	</test>
+		<test name="Test 5">
+		<classes>
+			<class name="tekbot.Test_ChatBot_Activities2" />
 		</classes>
 	</test>
 
-	<!-- <test name="Test 28">
-		<classes>
-			<class name="talentwize.H_Test_UsersManagement_Roles" />
-		</classes>
-	</test> -->
-
-	<test name="Test 32">
-		<classes>
-
-			<class
-				name="talentwize.H_Test_FunctionalAccess_PilotView_PersonalDetails_EmergencyContact" />
-		</classes>
-	</test>
-
-	<test name="Test 34">
-		<classes>
-
-			<class
-				name="talentwize.C_Test_FunctionalAccess_ProjectManagementPermission_ProjectDetail_ProjectMemberList" />
-		</classes>
-	</test>
-
-	<test name="Test 41">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_CheckIn_Board" />
-		</classes>
-	</test>
-
-	<test name="Test 53">
-		<classes>
-			<class
-				name="talentwize.C_Test_TalentPermission_CareerDevelopment_MyCareerDevelopment" />
-		</classes>
-	</test>
-
-	<test name="Test 56">
-		<classes>
-			<class
-				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ProjectBoard" />
-		</classes>
-	</test>
-
-	<test name="Test 75">
-		<classes>
-			<class name="talentwize.H_Test_FunctionalAccess_ED_Tasks" />
-		</classes>
-	</test>
-	<test name="Test 84">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_KPISettings" />
-		</classes>
-	</test>
-
-	<test name="Test 91">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_KPIBoardByProject" />
-		</classes>
-	</test>
-
-	<test name="Test 95">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_ReportPermission_TalentReport" />
-		</classes>
-	</test>
-
-	<test name="Test 97">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_TalentPermission_Competency_Settings_CompetencyConfigurationMapping" />
-		</classes>
-	</test>
-
-	<test name="Test 100">
-		<classes>
-			<class name="talentwize.H_Test_FunctionalAcess_Leave_Calendar" />
-		</classes>
-	</test>
-
-	<test name="Test 103">
-		<classes>
-			<class
-				name="talentwize.H_Test_FunctionalAccess_ProjectManagementPermission_ProjectPermission" />
-		</classes>
-	</test>
-
-	<test name="Test 107">
-		<classes>
-
-			<class
-				name="talentwize.C_Test_FunctionalH_Access_TalentPermission_CareerDevelopment_CareerDevelopmentBoard" />
-		</classes>
-	</test>
-
-
-	<test name="Test 113">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_GoalManagement" />
-		</classes>
-	</test>
-	
-	<test name="Test 116">
-		<classes>
-			<class
-				name="talentwize.C_Test_FunctionalAccess_Performance_KPISettingsByProject" />
-		</classes>
-	</test>
-	<test name="Test 117">
-		<classes>
-			<class
-				name="talentwize.H_Test_FunctionalAccess_Administration_Organization_JobTitle" />
-		</classes>
-	</test>
-
-	<test name="Test 118">
-		<classes>
-			<class
-				name="talentwize.H_Test_FunctionalAcess_Administration_UserManagement_Users_Roles" />
-		</classes>
-	</test>
-	
 	<!-- Test -->
 </suite> <!-- Suite -->

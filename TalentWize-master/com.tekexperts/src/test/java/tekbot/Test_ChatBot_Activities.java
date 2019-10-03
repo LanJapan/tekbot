@@ -15,7 +15,7 @@ import Ulties.TestManager;
 import controller.WebDriversManager;
 import tekbot.pages.HomePage_Client_Test;
 
-public class Test_ChatBot_Activities_Command extends TestManager {
+public class Test_ChatBot_Activities extends TestManager {
 
 	HomePage_Client_Test homePage;
 	WebDriver driver;
@@ -59,7 +59,6 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 
 	@Test(priority = 2)
 	public void SignIn() throws InterruptedException {
-		homePage.waitForPageLoaded();
 		TestLogger.info("Type any command");
 		homePage.typeMessage("hello");
 		TestLogger.info("Click on Sign in button");
@@ -118,19 +117,106 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 	}
 
 	@Test(priority = 4)
-	public void Imin() throws InterruptedException {
+	public void TT_848() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("Click on I'min (#imin) button");
 		homePage.clickButtonImin();
 		TestLogger.info("Scroll to bottom page");
 		homePage.scrollToBottomPage();
+		if (homePage.isLblClockingInDisplayed() == true) {
+			setStatusTest("PASS", "Clocking in is displayed");
+		} else {
+			setStatusTest("FAIL", "Clocking in is NOT displayed");
+		}
+		if (homePage.isTxtFirstLoginContentDisplayed() == true) {
+			setStatusTest("PASS", "First Login content is displayed");
+		} else {
+			setStatusTest("FAIL", "First Login content is NOT displayed");
+		}
+		if (homePage.isBtnActivityDisplayed() == true) {
+			setStatusTest("PASS", "Activity button is displayed");
+		} else {
+			setStatusTest("FAIL", "Activity buttont is NOT displayed");
+		}
+		if (homePage.isBtnCaseDisplayed() == true) {
+			setStatusTest("PASS", "Case button is displayed");
+		} else {
+			setStatusTest("FAIL", "Case buttont is NOT displayed");
+		}
+		if (homePage.isBtnGuideDisplayed() == true) {
+			setStatusTest("PASS", "Guide button is displayed");
+		} else {
+			setStatusTest("FAIL", "Guide buttont is NOT displayed");
+		}
 	}
 
 	@Test(priority = 5)
-	public void TT_797() throws InterruptedException {
+	public void TT_6624() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #lunch");
-		homePage.typeMessage("#lunch");
+		TestLogger.info("Click on Activity button");
+		homePage.clickButtonActivity();
+		if (homePage.isTxtCommandActivityDisplayed() == true) {
+			setStatusTest("PASS", "Activity command is displayed");
+		} else {
+			setStatusTest("FAIL", "Activity command  is NOT displayed");
+		}
+		if (homePage.isLblActivityDisplayed() == true) {
+			setStatusTest("PASS", "Activity label is displayed");
+		} else {
+			setStatusTest("FAIL", "Activity label  is NOT displayed");
+		}
+		if (homePage.isTxtActivityDisplayed() == true) {
+			setStatusTest("PASS", "Activity content is displayed");
+		} else {
+			setStatusTest("FAIL", "Activity content  is NOT displayed");
+		}
+		if (homePage.isBtnLunchDisplayed() == true) {
+			setStatusTest("PASS", "Lunch button is displayed");
+		} else {
+			setStatusTest("FAIL", "Lunch button  is NOT displayed");
+		}
+		if (homePage.isBtnBreakDisplayed() == true) {
+			setStatusTest("PASS", "Break button is displayed");
+		} else {
+			setStatusTest("FAIL", "Break button  is NOT displayed");
+		}
+		if (homePage.isBtnMeetingDisplayed() == true) {
+			setStatusTest("PASS", "Meeting button is displayed");
+		} else {
+			setStatusTest("FAIL", "Meeting button  is NOT displayed");
+		}
+		if (homePage.isBtnTrainingDisplayed() == true) {
+			setStatusTest("PASS", "Training button is displayed");
+		} else {
+			setStatusTest("FAIL", "Training button  is NOT displayed");
+		}
+		if (homePage.isBtn1on1Displayed() == true) {
+			setStatusTest("PASS", "1 on 1 button is displayed");
+		} else {
+			setStatusTest("FAIL", "1 on 1 button  is NOT displayed");
+		}
+		if (homePage.isBtnProjectDisplayed() == true) {
+			setStatusTest("PASS", "Project button is displayed");
+		} else {
+			setStatusTest("FAIL", "Project button  is NOT displayed");
+		}
+		if (homePage.isBtnNestingDisplayed() == true) {
+			setStatusTest("PASS", "Nesting button is displayed");
+		} else {
+			setStatusTest("FAIL", "Nesting button  is NOT displayed");
+		}
+		if (homePage.isBtnImoutDisplayed() == true) {
+			setStatusTest("PASS", "I'm out button is displayed");
+		} else {
+			setStatusTest("FAIL", "I'm out button  is NOT displayed");
+		}
+	}
+
+	@Test(priority = 6)
+	public void TT_6811() throws InterruptedException {
+		homePage.waitForPageLoaded();
+		TestLogger.info("Click Lunch (#lunch) button");
+		homePage.clickButtonLunch();
 		if (homePage.isTxtCommandLunchDisplayed() == true) {
 			setStatusTest("PASS", "Lunch command is displayed");
 		} else {
@@ -154,17 +240,20 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		TestLogger.info("Type command: #lunch");
 		homePage.typeMessage("#lunch");
 		if (homePage.isTxtFinishLunchDisplayed() == true) {
-			setStatusTest("PASS", "Don’t go sleepy on me now Test 1 Staff ;) is displayed");
+			setStatusTest("PASS", "Don’t go sleepy on me now Test 2 Staff ;) is displayed");
 		} else {
-			setStatusTest("FAIL", "Don’t go sleepy on me now Test 1 Staff ;) is NOT displayed");
+			setStatusTest("FAIL", "Don’t go sleepy on me now Test 2 Staff ;) is NOT displayed");
 		}
 	}
 
-	@Test(priority = 6)
-	public void TT_795() throws InterruptedException {
-		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #break");
-		homePage.typeMessage("#break");
+	@Test(priority = 7)
+	public void TT_6812() throws InterruptedException {
+		TestLogger.info("Scroll to Break button");
+		homePage.scrolltoActivityCategory();
+		TestLogger.info("Click Break (#break) button");
+		homePage.clickButtonBreak();
+		TestLogger.info("Scroll to bottom page");
+		homePage.scrollToBottomPage();
 		if (homePage.isLblBreakDisplayed() == true) {
 			setStatusTest("PASS", "Break title is displayed");
 		} else {
@@ -180,6 +269,7 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Break button  is NOT displayed");
 		}
+		// ==================================
 		TestLogger.info("Type command: #break");
 		homePage.typeMessage("#break");
 		if (homePage.isTxtFinishBreakDisplayed() == true) {
@@ -189,11 +279,15 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		}
 	}
 
-	@Test(priority = 7)
-	public void TT_802() throws InterruptedException {
+	@Test(priority = 8)
+	public void TT_6813() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #meeting");
-		homePage.typeMessage("#meeting");
+		TestLogger.info("User type random thing to the bot.");
+		homePage.typeMessage("help");
+		TestLogger.info("Click Activity (#activity) button");
+		homePage.clickButtonActivity();
+		TestLogger.info("Click Meeting (#meeting) button");
+		homePage.clickButtonMeeting();
 		// =====================================
 		if (homePage.isLblMeetingDisplayed() == true) {
 			setStatusTest("PASS", "Meeting title is displayed");
@@ -220,11 +314,15 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		}
 	}
 
-	@Test(priority = 8)
-	public void TT_798() throws InterruptedException {
+	@Test(priority = 9)
+	public void TT_6814() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #training");
-		homePage.typeMessage("#training");
+		TestLogger.info("User type random thing to the bot.");
+		homePage.typeMessage("help");
+		TestLogger.info("Click Activity (#activity) button");
+		homePage.clickButtonActivity();
+		TestLogger.info("Click Training button");
+		homePage.clickButtonTraining();
 		// =====================================
 		if (homePage.isLblTrainingDisplayed() == true) {
 			setStatusTest("PASS", "Training title is displayed");
@@ -242,6 +340,7 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 			setStatusTest("FAIL", "Finish Training  button  is NOT displayed");
 		}
 		// ==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #training");
 		homePage.typeMessage("#training");
 		if (homePage.isTxtFinishTrainingDisplayed() == true) {
@@ -251,11 +350,15 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		}
 	}
 
-	@Test(priority = 9)
-	public void TT_801() throws InterruptedException {
+	@Test(priority = 10)
+	public void TT_6815() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #1on1");
-		homePage.typeMessage("#1on1");
+		TestLogger.info("User type random thing to the bot.");
+		homePage.typeMessage("help");
+		TestLogger.info("Click Activity (#activity) button");
+		homePage.clickButtonActivity();
+		TestLogger.info("Click 1 on 1 (#1on1) button");
+		homePage.clickButton1on1();
 		// =====================================
 		if (homePage.isLbl1on1Displayed() == true) {
 			setStatusTest("PASS", "1 on 1 title is displayed");
@@ -273,6 +376,7 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 			setStatusTest("FAIL", "Finish 1 on 1  button  is NOT displayed");
 		}
 		// ==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #1on1");
 		homePage.typeMessage("#1on1");
 		if (homePage.isTxtFinish1on1Displayed() == true) {
@@ -282,11 +386,16 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		}
 	}
 
-	@Test(priority = 10)
-	public void TT_6615() throws InterruptedException {
+	@Test(priority = 11)
+	public void TT_6816() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #project");
-		homePage.typeMessage("#project");
+		TestLogger.info("User type random thing to the bot.");
+		homePage.typeMessage("help");
+		TestLogger.info("Click Activity (#activity) button");
+		homePage.clickButtonActivity();
+		TestLogger.info("Click Project (#project) button");
+		homePage.clickButtonProject();
+		// =====================================
 		if (homePage.isLblProjectDisplayed() == true) {
 			setStatusTest("PASS", "Project title is displayed");
 		} else {
@@ -302,6 +411,7 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
 		}
+		// ==================================
 		TestLogger.info("Type command: #project");
 		homePage.typeMessage("#project");
 		if (homePage.isTxtFinishProjectDisplayed() == true) {
@@ -311,11 +421,15 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		}
 	}
 
-	@Test(priority = 11)
-	public void TT_6616() throws InterruptedException {
+	@Test(priority = 12)
+	public void TT_6817() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("Type command: #nesting");
-		homePage.typeMessage("#nesting");
+		TestLogger.info("User type random thing to the bot.");
+		homePage.typeMessage("help");
+		TestLogger.info("Click Activity (#activity) button");
+		homePage.clickButtonActivity();
+		TestLogger.info("Click Nesting (#nesting) button");
+		homePage.clickButtonNesting();
 		// =====================================
 		if (homePage.isLblNestingDisplayed() == true) {
 			setStatusTest("PASS", "Nesting title is displayed");
@@ -342,8 +456,60 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		}
 	}
 
+	@Test(priority = 13)
+	public void TT_849() throws InterruptedException {
+		homePage.waitForPageLoaded();
+		TestLogger.info("User type: #imout");
+		homePage.typeMessage("#imout");
+		if (homePage.isLblClockingOutDisplayed() == true) {
+			setStatusTest("PASS", "Clocking out title is displayed");
+		} else {
+			setStatusTest("FAIL", "Clocking out title  is NOT displayed");
+		}
+		if (homePage.isTxtClockingOutContentDisplayed() == true) {
+			setStatusTest("PASS", "Clocking out content is displayed");
+		} else {
+			setStatusTest("FAIL", "Clocking out content  is NOT displayed");
+		}
+		if (homePage.isBtnYesImoutDisplayed() == true) {
+			setStatusTest("PASS", "Yes button is displayed");
+		} else {
+			setStatusTest("FAIL", "Yes button  is NOT displayed");
+		}
+		if (homePage.isBtnBackToActivityCategoryDisplayed() == true) {
+			setStatusTest("PASS", "Back To Activity Category button is displayed");
+		} else {
+			setStatusTest("FAIL", "Back To Activity Category button  is NOT displayed");
+		}
+	}
+
+	@Test(priority = 14)
+	public void TT_6610() throws InterruptedException {
+		homePage.waitForPageLoaded();
+		TestLogger.info("User type: #yes");
+		homePage.typeMessage("#yes");
+		if (homePage.isTxtYesImoutDisplayed() == true) {
+			setStatusTest("PASS", "See you tomorrow is displayed");
+		} else {
+			setStatusTest("FAIL", "See you tomorrow is NOT displayed");
+		}
+	}
+
+	@Test(priority = 15)
+	public void TT_6609() throws InterruptedException {
+		homePage.waitForPageLoaded();
+		TestLogger.info("User type: #imin");
+		homePage.typeMessage("#imin");
+		if (homePage.isTxtHelloDisplayed() == true) {
+			setStatusTest("PASS", "Hello nickname is displayed");
+		} else {
+			setStatusTest("FAIL", "Hello nickname is NOT displayed");
+		}
+	}
+
 	@AfterMethod(alwaysRun = true)
 	public void finishTestCase(Method method) throws InterruptedException {
+
 		TestLogger.info("====== End Testcase : " + method.getName() + " ======");
 
 	}

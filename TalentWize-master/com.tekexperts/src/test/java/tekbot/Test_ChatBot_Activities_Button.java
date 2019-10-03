@@ -622,6 +622,6 @@ public class Test_ChatBot_Activities_Button extends TestManager {
 
 			@AfterTest(alwaysRun = true)
 			public void dongTrinhDuyet() {
-				//driver.close();
+				driver.close();
 			}
 }

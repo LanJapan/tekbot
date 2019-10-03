@@ -60,6 +60,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 
 	@Test(priority = 2)
 	public void SignIn() throws InterruptedException {
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type any command");
 		homePage.typeMessage("hello");
 		TestLogger.info("Click on Sign in button");
@@ -131,6 +132,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 	
 		@Test(priority = 5)
 		public void TT_6839() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #lunch");
 			homePage.typeMessage("#lunch");
 			if (homePage.isTxtCommandLunchDisplayed()== true) {
@@ -153,6 +155,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 			} else {
 				setStatusTest("FAIL", "Finish Lunch button  is NOT displayed");
 			}
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #break");
 			homePage.typeMessage("#break");
 			if (homePage.isTxtCommandBreakDisplayed()== true) {
@@ -185,6 +188,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 	}
 		@Test(priority = 6)
 		public void TT_6840() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #break");
 			homePage.typeMessage("#break");
 			if (homePage.isLblBreakDisplayed()== true) {
@@ -236,6 +240,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 	
 		@Test(priority = 7)
 		public void TT_6841() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #meeting");
 			homePage.typeMessage("#meeting");
 			//=====================================
@@ -287,6 +292,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 	}
 		@Test(priority = 8)
 	public void TT_6842() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #training");
 			homePage.typeMessage("#training");
 			//=====================================
@@ -339,6 +345,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 }
 		@Test(priority = 9)
 		public void TT_6843() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #1on1");
 			homePage.typeMessage("#1on1");
 			//=====================================
@@ -391,6 +398,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 	}
 		@Test(priority = 10)
 		public void TT_6844() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #project");
 			homePage.typeMessage("#project");
 			//=====================================
@@ -443,6 +451,7 @@ public class Test_ChatBot_Activities_Command_Button extends TestManager {
 	}
 		@Test(priority = 11)
 		public void TT_6845() throws InterruptedException {
+			homePage.waitForPageLoaded();
 			TestLogger.info("Type command: #nesting");
 			homePage.typeMessage("#nesting");
 			//=====================================
