@@ -15,7 +15,7 @@ import Ulties.TestManager;
 import controller.WebDriversManager;
 import tekbot.pages.HomePage_Client_Test;
 
-public class Test_ChatBot_Activities3 extends TestManager {
+public class Test_ChatBot_Activities6 extends TestManager {
 
 	HomePage_Client_Test homePage;
 	WebDriver driver;
@@ -128,16 +128,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 	}
 	@Test(priority = 5)
-	public void TT_6676() throws InterruptedException {
+	public void TT_796() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Lunch (#lunch) button");
-		homePage.clickButtonLunch();
+		TestLogger.info("User type #lunch");
+		homePage.typeMessage("#lunch");
 		if (homePage.isTxtCommandLunchDisplayed()== true) {
 			setStatusTest("PASS", "Lunch command is displayed");
 		} else {
@@ -158,9 +152,34 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Lunch button  is NOT displayed");
 		}
+		//========================
 		homePage.waitForPageLoaded();
-		TestLogger.info("Click Lunch (#lunch) button");
-		homePage.clickButtonLunch();
+		TestLogger.info("Type command: #break");
+		homePage.typeMessage("#break");
+		if (homePage.isTxtCommandBreakDisplayed()== true) {
+			setStatusTest("PASS", "Break command is displayed");
+		} else {
+			setStatusTest("FAIL", "Break command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinishLunchActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Lunch button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Lunch button  is NOT displayed");
+		}
+		//==========================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #lunch");
+		homePage.typeMessage("#lunch");
 		if (homePage.isTxtFinishLunchDisplayed()== true) {
 			setStatusTest("PASS", "Don’t go sleepy on me now Test 2 Staff ;) is displayed");
 		} else {
@@ -168,18 +187,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 }
 	@Test(priority = 7)
-	public void TT_6678() throws InterruptedException {
+	public void TT_791() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Break (#break) button");
-		homePage.clickButtonBreak();
-		TestLogger.info("Scroll to bottom page");
-		homePage.scrollToBottomPage();
+		TestLogger.info("User type #break");
+		homePage.typeMessage("#break");
 		if (homePage.isLblBreakDisplayed()== true) {
 			setStatusTest("PASS", "Break title is displayed");
 		} else {
@@ -197,8 +208,32 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 		//==================================
 		homePage.waitForPageLoaded();
-		TestLogger.info("Click Break (#break) button");
-		homePage.clickButtonBreak();
+		TestLogger.info("Type command: #meeting");
+		homePage.typeMessage("#meeting");
+		if (homePage.isTxtCommandMeetingDisplayed()== true) {
+			setStatusTest("PASS", "Meeting command is displayed");
+		} else {
+			setStatusTest("FAIL", "Meeting command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirst_BreakDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirst_BreakDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinishBreakActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Break button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Break button  is NOT displayed");
+		}
+		//========================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #break");
+		homePage.typeMessage("#break");
 		if (homePage.isTxtFinishBreakDisplayed()== true) {
 			setStatusTest("PASS", "Hey did you close the door? I hate that buzzer :s is displayed");
 		} else {
@@ -207,17 +242,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 }
 
 	@Test(priority = 8)
-	public void TT_6680() throws InterruptedException {
+	public void TT_803() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Meeting (#meeting) button");
-		homePage.clickButtonMeeting();
-		homePage.waitForPageLoaded();
+		TestLogger.info("User type #meeting");
+		homePage.typeMessage("#meeting");
 		//=====================================
 		if (homePage.isLblMeetingDisplayed()== true) {
 			setStatusTest("PASS", "Meeting title is displayed");
@@ -234,8 +262,34 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Meeting button  is NOT displayed");
 		}
-		TestLogger.info("Click on Meeting button");
-		homePage.clickButtonMeeting();
+		//==================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #lunch");
+		homePage.typeMessage("#lunch");
+		if (homePage.isTxtCommandLunchDisplayed()== true) {
+			setStatusTest("PASS", "Lunch command is displayed");
+		} else {
+			setStatusTest("FAIL", "Lunch command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirst_MeetingDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirst_MeetingDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinishMeetingActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Meeting button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Meeting button  is NOT displayed");
+		}
+		//==================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #meeting");
+		homePage.typeMessage("#meeting");
 		if (homePage.isTxtFinishMeetingDisplayed()== true) {
 			setStatusTest("PASS", "Hope the meeting wasn’t boring. is displayed");
 		} else {
@@ -243,16 +297,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 }
 	@Test(priority = 9)
-	public void TT_6682() throws InterruptedException {
+	public void TT_799() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Training button");
-		homePage.clickButtonTraining();
+		TestLogger.info("User type #training");
+		homePage.typeMessage("#training");
 		//=====================================
 		if (homePage.isLblTrainingDisplayed()== true) {
 			setStatusTest("PASS", "Training title is displayed");
@@ -271,8 +319,32 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 		//==================================
 		homePage.waitForPageLoaded();
-		TestLogger.info("Click on Training  button");
-		homePage.clickButtonTraining();
+		TestLogger.info("Type command: #lunch");
+		homePage.typeMessage("#lunch");
+		if (homePage.isTxtCommandLunchDisplayed()== true) {
+			setStatusTest("PASS", "Lunch command is displayed");
+		} else {
+			setStatusTest("FAIL", "Lunch command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirst_TrainingDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirst_TrainingDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinishTrainingActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish 1 on 1  button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish 1 on 1  button  is NOT displayed");
+		}
+		//==================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #training");
+		homePage.typeMessage("#training");
 		if (homePage.isTxtFinishTrainingDisplayed()== true) {
 			setStatusTest("PASS", "Msg is displayed");
 		} else {
@@ -280,16 +352,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 }
 	@Test(priority = 10)
-	public void TT_6797() throws InterruptedException {
+	public void TT_800() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		homePage.typeMessage("help2");
-		homePage.waitForPageLoaded();
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		TestLogger.info("Click 1 on 1 (#1on1) button");
-		homePage.clickButton1on1();
+		TestLogger.info("User type #1on1");
+		homePage.typeMessage("#1on1");
 		//=====================================
 		if (homePage.isLbl1on1Displayed()== true) {
 			setStatusTest("PASS", "1 on 1 title is displayed");
@@ -307,8 +373,33 @@ public class Test_ChatBot_Activities3 extends TestManager {
 			setStatusTest("FAIL", "Finish 1 on 1  button  is NOT displayed");
 		}
 		//==================================
-		TestLogger.info("Click on 1 on 1  button");
-		homePage.clickButton1on1();
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #lunch");
+		homePage.typeMessage("#lunch");
+		if (homePage.isTxtCommandLunchDisplayed()== true) {
+			setStatusTest("PASS", "Lunch command is displayed");
+		} else {
+			setStatusTest("FAIL", "Lunch command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirst_1on1Displayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirst_1on1Displayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinish1on1ActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish 1 on 1  button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish 1 on 1  button  is NOT displayed");
+		}
+		//==================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #1on1");
+		homePage.typeMessage("#1on1");
 		if (homePage.isTxtFinish1on1Displayed()== true) {
 			setStatusTest("PASS", "Pretty sure it went well. is displayed");
 		} else {
@@ -316,14 +407,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 }
 	@Test(priority = 11)
-	public void TT_6799() throws InterruptedException {
+	public void TT_6617() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		TestLogger.info("Click Project (#project) button");
-		homePage.clickButtonProject();
+		TestLogger.info("User type #project");
+		homePage.typeMessage("#project");
 		//=====================================
 		if (homePage.isLblProjectDisplayed()== true) {
 			setStatusTest("PASS", "Project title is displayed");
@@ -341,8 +428,33 @@ public class Test_ChatBot_Activities3 extends TestManager {
 			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
 		}
 		//==================================
-		TestLogger.info("Click on Project  button");
-		homePage.clickButtonProject();
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #lunch");
+		homePage.typeMessage("#lunch");
+		if (homePage.isTxtCommandLunchDisplayed()== true) {
+			setStatusTest("PASS", "Lunch command is displayed");
+		} else {
+			setStatusTest("FAIL", "Lunch command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirst_ProjectDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirst_ProjectDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinishProjectActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Project  button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
+		}
+		//==================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #project");
+		homePage.typeMessage("#project");
 		if (homePage.isTxtFinishProjectDisplayed()== true) {
 			setStatusTest("PASS", "Welcome back Test 2 Staff. is displayed");
 		} else {
@@ -350,14 +462,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		}
 }
 	@Test(priority = 12)
-	public void TT_6801() throws InterruptedException {
+	public void TT_6618() throws InterruptedException {
 		homePage.waitForPageLoaded();
-		TestLogger.info("User type random thing to the bot.");
-		homePage.typeMessage("help");
-		TestLogger.info("Click Activity (#activity) button");
-		homePage.clickButtonActivity();
-		TestLogger.info("Click Nesting (#nesting) button");
-		homePage.clickButtonNesting();
+		TestLogger.info("User type #nesting");
+		homePage.typeMessage("#nesting");
 		//=====================================
 		if (homePage.isLblNestingDisplayed()== true) {
 			setStatusTest("PASS", "Nesting title is displayed");
@@ -375,8 +483,33 @@ public class Test_ChatBot_Activities3 extends TestManager {
 			setStatusTest("FAIL", "Finish Nesting  button  is NOT displayed");
 		}
 		//==================================
-		TestLogger.info("Click on Nesting  button");
-		homePage.clickButtonNesting();
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #lunch");
+		homePage.typeMessage("#lunch");
+		if (homePage.isTxtCommandLunchDisplayed()== true) {
+			setStatusTest("PASS", "Lunch command is displayed");
+		} else {
+			setStatusTest("FAIL", "Lunch command  is NOT displayed");
+		}
+		if (homePage.isLblFinishYourActivityFirst_NestingDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First title is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First title  is NOT displayed");
+		}
+		if (homePage.isTxtFinishYourActivityFirst_NestingDisplayed()== true) {
+			setStatusTest("PASS", "Finish Your Activity First content is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Your Activity First content  is NOT displayed");
+		}
+		if (homePage.isBtnFinishNestingActivityFirstDisplayed()== true) {
+			setStatusTest("PASS", "Finish Nesting  button is displayed");
+		} else {
+			setStatusTest("FAIL", "Finish Nesting  button  is NOT displayed");
+		}
+		//==================================
+		homePage.waitForPageLoaded();
+		TestLogger.info("Type command: #nesting");
+		homePage.typeMessage("#nesting");
 		if (homePage.isTxtFinishNestingDisplayed()== true) {
 			setStatusTest("PASS", "Welcome back Test 2 Staff. is displayed");
 		} else {

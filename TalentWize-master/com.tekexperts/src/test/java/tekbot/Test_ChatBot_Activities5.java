@@ -197,12 +197,12 @@ public class Test_ChatBot_Activities5 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Break (#break) button");
 		homePage.clickButtonBreak();
-/*		TestLogger.info("Scroll to bottom page");
-		homePage.scrollToBottomPage();*/
 		if (homePage.isLblBreakDisplayed()== true) {
 			setStatusTest("PASS", "Break title is displayed");
 		} else {
@@ -258,6 +258,7 @@ public class Test_ChatBot_Activities5 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
 		homePage.waitForPageLoaded();
@@ -318,8 +319,10 @@ public class Test_ChatBot_Activities5 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Training button");
 		homePage.clickButtonTraining();
 		//=====================================
@@ -377,8 +380,10 @@ public class Test_ChatBot_Activities5 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click 1 on 1 (#1on1) button");
 		homePage.clickButton1on1();
 		//=====================================
@@ -439,6 +444,7 @@ public class Test_ChatBot_Activities5 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Project (#project) button");
 		homePage.clickButtonProject();
 		//=====================================
@@ -482,6 +488,7 @@ public class Test_ChatBot_Activities5 extends TestManager {
 			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #project");
 		homePage.typeMessage("#project");
 		if (homePage.isTxtFinishProjectDisplayed()== true) {

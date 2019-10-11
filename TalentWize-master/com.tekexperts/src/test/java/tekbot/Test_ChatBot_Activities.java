@@ -237,6 +237,7 @@ public class Test_ChatBot_Activities extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Lunch button  is NOT displayed");
 		}
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #lunch");
 		homePage.typeMessage("#lunch");
 		if (homePage.isTxtFinishLunchDisplayed() == true) {
@@ -270,6 +271,7 @@ public class Test_ChatBot_Activities extends TestManager {
 			setStatusTest("FAIL", "Finish Break button  is NOT displayed");
 		}
 		// ==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #break");
 		homePage.typeMessage("#break");
 		if (homePage.isTxtFinishBreakDisplayed() == true) {
@@ -284,8 +286,10 @@ public class Test_ChatBot_Activities extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Meeting (#meeting) button");
 		homePage.clickButtonMeeting();
 		// =====================================
@@ -305,6 +309,7 @@ public class Test_ChatBot_Activities extends TestManager {
 			setStatusTest("FAIL", "Finish Meeting button  is NOT displayed");
 		}
 		// ==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #meeting");
 		homePage.typeMessage("#meeting");
 		if (homePage.isTxtFinishMeetingDisplayed() == true) {
@@ -319,8 +324,10 @@ public class Test_ChatBot_Activities extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Training button");
 		homePage.clickButtonTraining();
 		// =====================================
@@ -355,8 +362,10 @@ public class Test_ChatBot_Activities extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click 1 on 1 (#1on1) button");
 		homePage.clickButton1on1();
 		// =====================================
@@ -391,8 +400,10 @@ public class Test_ChatBot_Activities extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Project (#project) button");
 		homePage.clickButtonProject();
 		// =====================================
@@ -412,6 +423,7 @@ public class Test_ChatBot_Activities extends TestManager {
 			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
 		}
 		// ==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #project");
 		homePage.typeMessage("#project");
 		if (homePage.isTxtFinishProjectDisplayed() == true) {
@@ -426,8 +438,10 @@ public class Test_ChatBot_Activities extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Nesting (#nesting) button");
 		homePage.clickButtonNesting();
 		// =====================================
@@ -447,6 +461,7 @@ public class Test_ChatBot_Activities extends TestManager {
 			setStatusTest("FAIL", "Finish Nesting  button  is NOT displayed");
 		}
 		// ==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Type command: #nesting");
 		homePage.typeMessage("#nesting");
 		if (homePage.isTxtFinishNestingDisplayed() == true) {

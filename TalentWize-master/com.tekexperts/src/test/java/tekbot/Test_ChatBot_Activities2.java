@@ -308,6 +308,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("Click Lunch (#lunch) button");
 		homePage.clickButtonLunch();
+		homePage.waitForPageLoaded();
 		if (homePage.isTxtCommandLunchDisplayed()== true) {
 			setStatusTest("PASS", "Lunch command is displayed");
 		} else {
@@ -342,8 +343,10 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Break (#break) button");
 		homePage.clickButtonBreak();
 		TestLogger.info("Scroll to bottom page");
@@ -364,6 +367,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 			setStatusTest("FAIL", "Finish Break button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Finish Break button");
 		homePage.clickButtonFinishBreak();
 		if (homePage.isTxtFinishBreakDisplayed()== true) {
@@ -378,8 +382,10 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Meeting (#meeting) button");
 		homePage.clickButtonMeeting();
 		//=====================================
@@ -398,6 +404,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Meeting button  is NOT displayed");
 		}
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Finish Meeting button");
 		homePage.clickButtonFinishMeeting();
 		if (homePage.isTxtFinishMeetingDisplayed()== true) {
@@ -411,8 +418,10 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Training button");
 		homePage.clickButtonTraining();
 		//=====================================
@@ -432,6 +441,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 			setStatusTest("FAIL", "Finish Training  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Training  button");
 		homePage.clickButtonFinishTraining();
 		if (homePage.isTxtFinishTrainingDisplayed()== true) {
@@ -445,8 +455,10 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click 1 on 1 (#1on1) button");
 		homePage.clickButton1on1();
 		//=====================================
@@ -466,6 +478,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 			setStatusTest("FAIL", "Finish 1 on 1  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Finish 1 on 1  button");
 		homePage.clickButtonFinish1on1();
 		if (homePage.isTxtFinish1on1Displayed()== true) {
@@ -479,8 +492,10 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Project (#project) button");
 		homePage.clickButtonProject();
 		//=====================================
@@ -500,6 +515,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Finish Project  button");
 		homePage.clickButtonFinishProject();
 		if (homePage.isTxtFinishProjectDisplayed()== true) {
@@ -513,8 +529,10 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Nesting (#nesting) button");
 		homePage.clickButtonNesting();
 		//=====================================
@@ -534,6 +552,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 			setStatusTest("FAIL", "Finish Nesting  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Finish Nesting  button");
 		homePage.clickButtonFinishNesting();
 		if (homePage.isTxtFinishNestingDisplayed()== true) {
@@ -547,6 +566,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type: #imout");
 		homePage.typeMessage("#imout");
+		homePage.waitForPageLoaded();
 		if (homePage.isLblClockingOutDisplayed() == true) {
 			setStatusTest("PASS", "Clocking out title is displayed");
 		} else {
@@ -567,6 +587,7 @@ public class Test_ChatBot_Activities2 extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Back To Activity Category button  is NOT displayed");
 		}
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Yes I'm sure button");
 		homePage.clickBtnYesImout();
 		if (homePage.isTxtYesImoutDisplayed() == true) {

@@ -142,6 +142,8 @@ public class HomePage_Client_Test extends WebActions {
 	By btnYesImout=By.xpath("(//button[contains(@type,'button')])[4]");
 	By btnBackToActivityCategory=By.xpath("//button[contains(.,'Get me back to Activity Category (#activity)')]");
 	By txtYesImout=By.xpath("//p[contains(.,'Time to get some deserved rest! See you tomorrow Test 2 Staff')]");
+	//===================Im in=================
+	By txtRegisterImin=By.xpath("//p[contains(.,'Please register as active on the bot. (Hint: use #imin)')]");
 	
 	public HomePage_Client_Test(WebDriver driver) {
 		super(driver);
@@ -151,7 +153,7 @@ public class HomePage_Client_Test extends WebActions {
 
 	public void clickButtonActivity() {
 		try {
-			waitForElementPresent(15, btnActivity);
+			waitForElementPresent(25, btnActivity);
 
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -403,7 +405,7 @@ public class HomePage_Client_Test extends WebActions {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(txtEmail).click();
+		clickByJavaScript(txtEmail);
 	}
 
 	public void typeEmail(String Email) {
@@ -417,7 +419,7 @@ public class HomePage_Client_Test extends WebActions {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(btnNext).click();
+		clickByJavaScript(btnNext);
 	}
 
 	public void typePassword(String Password) {
@@ -431,7 +433,7 @@ public class HomePage_Client_Test extends WebActions {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(btnSigninAD).click();
+		clickByJavaScript(btnSigninAD);
 	}
 
 	public void clickButtonYes() {
@@ -697,7 +699,7 @@ public class HomePage_Client_Test extends WebActions {
 
 	public void clickButtonBreak() {
 		try {
-			waitForElementPresent(5, btnBreak);
+			waitForElementPresent(25, btnBreak);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -717,7 +719,7 @@ public class HomePage_Client_Test extends WebActions {
 
 	public void clickButtonTraining() {
 		try {
-			waitForElementPresent(5, btnTraining);
+			waitForElementPresent(25, btnTraining);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -821,7 +823,7 @@ public class HomePage_Client_Test extends WebActions {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(btnFinishLunch).click();
+		clickByJavaScript(btnFinishLunch);
 	}
 
 	public boolean isTxtFinishLunchDisplayed() {
@@ -892,7 +894,7 @@ public class HomePage_Client_Test extends WebActions {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(btnFinishLunch_activityfirst).click();
+		clickByJavaScript(btnFinishLunch_activityfirst);
 	}
 
 	public void scrolltoActivityCategory() {
@@ -955,12 +957,12 @@ public class HomePage_Client_Test extends WebActions {
 
 	public void clickButtonFinishBreak() {
 		try {
-			waitForElementPresent(5, btnFinishBreak);
+			waitForElementPresent(25, btnFinishBreak);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(btnFinishBreak).click();
+		clickByJavaScript(btnFinishBreak);
 	}
 
 	public boolean isTxtFinishBreakDisplayed() {
@@ -1672,7 +1674,7 @@ public class HomePage_Client_Test extends WebActions {
 	}
 	public void clickBtnYesImout() {
 		try {
-			waitForElementPresent(5, btnYesImout);
+			waitForElementPresent(25, btnYesImout);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -1687,5 +1689,17 @@ public class HomePage_Client_Test extends WebActions {
 			e.printStackTrace();
 		}
 		clickByJavaScript(btnBackToActivityCategory);
+	}
+	//============imin===========
+	public boolean isTxtRegisterIminDisplayed() {
+		boolean flag = false;
+		try {
+			if (driver.findElements(txtRegisterImin).size() > 0) {
+				flag = true;
+			}
+		} catch (Exception e) {
+			return flag;
+		}
+		return flag;
 	}
 }
