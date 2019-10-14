@@ -234,6 +234,7 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		} else {
 			setStatusTest("FAIL", "Finish Meeting button  is NOT displayed");
 		}
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Meeting button");
 		homePage.clickButtonMeeting();
 		if (homePage.isTxtFinishMeetingDisplayed()== true) {
@@ -288,6 +289,7 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click 1 on 1 (#1on1) button");
 		homePage.clickButton1on1();
 		//=====================================
@@ -307,6 +309,7 @@ public class Test_ChatBot_Activities3 extends TestManager {
 			setStatusTest("FAIL", "Finish 1 on 1  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on 1 on 1  button");
 		homePage.clickButton1on1();
 		if (homePage.isTxtFinish1on1Displayed()== true) {
@@ -320,8 +323,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Project (#project) button");
 		homePage.clickButtonProject();
 		//=====================================
@@ -341,6 +346,7 @@ public class Test_ChatBot_Activities3 extends TestManager {
 			setStatusTest("FAIL", "Finish Project  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Project  button");
 		homePage.clickButtonProject();
 		if (homePage.isTxtFinishProjectDisplayed()== true) {
@@ -354,8 +360,10 @@ public class Test_ChatBot_Activities3 extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type random thing to the bot.");
 		homePage.typeMessage("help");
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Activity (#activity) button");
 		homePage.clickButtonActivity();
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click Nesting (#nesting) button");
 		homePage.clickButtonNesting();
 		//=====================================
@@ -375,6 +383,7 @@ public class Test_ChatBot_Activities3 extends TestManager {
 			setStatusTest("FAIL", "Finish Nesting  button  is NOT displayed");
 		}
 		//==================================
+		homePage.waitForPageLoaded();
 		TestLogger.info("Click on Nesting  button");
 		homePage.clickButtonNesting();
 		if (homePage.isTxtFinishNestingDisplayed()== true) {
