@@ -179,6 +179,27 @@ public class Test_ChatBot_Activities7 extends TestManager {
 		}
 	}
 	@Test(priority = 7)
+	public void TT_7239() throws InterruptedException {
+		homePage.waitForPageLoaded();
+		TestLogger.info("User type #meeting");
+		homePage.typeMessage("#meeting");
+		if (homePage.isLblClockingInDisplayed() == true) {
+			setStatusTest("PASS", "Clocking In is displayed");
+		} else {
+			setStatusTest("FAIL", "Clocking In is NOT displayed");
+		}
+		if (homePage.isTxtRegisterIminDisplayed() == true) {
+			setStatusTest("PASS", "Register as active on the chat bot is displayed");
+		} else {
+			setStatusTest("FAIL", "Register as active on the chat bot is NOT displayed");
+		}
+		if (homePage.isBtnIminDisplayed() == true) {
+			setStatusTest("PASS", "Imin button is displayed");
+		} else {
+			setStatusTest("FAIL", "Imin button is NOT displayed");
+		}
+	}
+	@Test(priority = 8)
 	public void TT_7240() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #training");
@@ -199,7 +220,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void TT_7241() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #1on1");
@@ -220,7 +241,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void TT_7242() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #project");
@@ -241,7 +262,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority =10)
+	@Test(priority =11)
 	public void TT_7243() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #nesting");
@@ -262,7 +283,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void TT_7244() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #yes");
@@ -283,7 +304,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority =12)
+	@Test(priority =13)
 	public void TT_7245() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #activity");
@@ -304,7 +325,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority =13)
+	@Test(priority =14)
 	public void TT_7246() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #assign");
@@ -325,7 +346,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 14)
+	@Test(priority = 15)
 	public void TT_7247() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #transfer");
@@ -346,7 +367,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 15)
+	@Test(priority = 16)
 	public void TT_7248() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type #view");
@@ -367,7 +388,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 16)
+	@Test(priority = 17)
 	public void TT_807() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type space before #imIN");
@@ -388,7 +409,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 17)
+	@Test(priority = 18)
 	public void TT_808() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type space after #imIN");
@@ -409,7 +430,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 18)
+	@Test(priority = 19)
 	public void TT_809() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type html tag: <i>#imin</i>");
@@ -430,7 +451,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 19)
+	@Test(priority = 20)
 	public void TT_811() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type java script: <script>alert('#imin')</script>");
@@ -451,7 +472,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Imin button is NOT displayed");
 		}
 	}
-	@Test(priority = 20)
+	@Test(priority = 21)
 	public void TT_805() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type: #IMIN");
@@ -462,7 +483,7 @@ public class Test_ChatBot_Activities7 extends TestManager {
 			setStatusTest("FAIL", "Hello nicknme is NOT displayed");
 		}
 	}
-	@Test(priority = 21)
+	@Test(priority = 22)
 	public void TT_806() throws InterruptedException {
 		homePage.waitForPageLoaded();
 		TestLogger.info("User type: #imIN");

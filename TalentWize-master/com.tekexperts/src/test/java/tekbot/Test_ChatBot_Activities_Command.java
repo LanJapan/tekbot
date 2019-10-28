@@ -122,8 +122,12 @@ public class Test_ChatBot_Activities_Command extends TestManager {
 		homePage.waitForPageLoaded();
 		TestLogger.info("Click on I'min (#imin) button");
 		homePage.clickButtonImin();
-		TestLogger.info("Scroll to bottom page");
 		homePage.scrollToBottomPage();
+		if (homePage.isTxtHelloDisplayed()== true) {
+			setStatusTest("PASS", "hello nick name is displayed");
+		} else {
+			setStatusTest("FAIL", "hello nick name is NOT displayed");
+		}
 	}
 
 	@Test(priority = 5)

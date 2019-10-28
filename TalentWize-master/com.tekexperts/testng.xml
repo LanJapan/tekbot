@@ -60,5 +60,11 @@
 			<class name="tekbot.Test_ChatBot_Activities7" />
 		</classes>
 	</test>
+	
+	<test name="Test 11">
+		<classes>
+			<class name="tekbot.Test_ChatBot_Activities_Command_Command_Button" />
+		</classes>
+	</test>
 	<!-- Test -->
 </suite> <!-- Suite -->

@@ -12,7 +12,7 @@ import controller.WebActions;
 public class HomePage_Client_Test extends WebActions {
 
 	By btnSignin = By.xpath("//button[contains(@aria-label,'Sign In')]");
-	By txtFillMessage = By.xpath("//input[@aria-label='Type your message']");
+	By txtFillMessage = By.xpath("//input[contains(@placeholder,'Type your message')]");
 	By txtWelcometoTekBot1 = By.xpath("//p[contains(.,'Welcome to TekBot')]");
 	By txtWelcometoTekBot2 = By.xpath("//p[contains(.,'Hi, We are in the process of updating the Tekbot.')]");
 	By iconChatBot = By.xpath("//img[contains(@class,'ac-image')]");
@@ -41,6 +41,7 @@ public class HomePage_Client_Test extends WebActions {
 	By lblActivitycategory = By.xpath("//p[contains(.,'Activity category')]");
 	By txtActivity = By.xpath("//p[contains(.,'Here’s what you can do in Activities:')]");
 	By btnLunch = By.xpath("//button[@aria-label='Lunch (#lunch)'][contains(.,'Lunch (#lunch)')]");
+	By btnLunch2=By.xpath("//button[contains(.,'Lunch (#lunch)')]");
 	By btnBreak = By.xpath("//button[contains(.,'Break (#break)')]");
 	By btnMeeting = By.xpath("//button[contains(.,'Meeting (#meeting)')]");
 	By btnTraining = By.xpath("//button[contains(.,'Training (#training)')]");
@@ -900,7 +901,7 @@ public class HomePage_Client_Test extends WebActions {
 	public void scrolltoActivityCategory() {
 		scrollToElement(driver.findElement(btnBreak));
 		try {
-			waitForElementPresent(10, btnBreak);
+			waitForElementPresent(25, btnBreak);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -908,10 +909,9 @@ public class HomePage_Client_Test extends WebActions {
 	}
 
 	public void scrolltoBtnLunch() {
-		clickTxtCommand_Break();
-		scrollToElement(driver.findElement(btnLunch));
+		scrollToElement(driver.findElement(btnLunch2));
 		try {
-			waitForElementPresent(10, btnLunch);
+			waitForElementPresent(10, btnLunch2);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
